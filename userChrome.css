@@ -1,0 +1,43 @@
+@import "tabbar.css";
+@import "urlbar.css";
+@import "navbar.css";
+
+:root {
+	--tab-min-height: 31px !important;
+	--tab-min-width: 66px !important;
+}
+
+
+#nav-bar,
+#PersonalToolbar,
+#titlebar,
+#sidebar-box {
+	opacity: 1 !important;
+	--moz-appearance: -moz-mac-vibrant-titlebar-light !important;
+	background-color: var(--body-background-color) !important;
+}
+
+#TabsToolbar {
+	margin-bottom: 0px !important;
+	margin-left: 5px;
+	margin-right: 10px;
+}
+
+
+#unified-extensions-button {
+	width: 0.1px;
+	padding-inline: 0 !important
+}
+
+#unified-extensions-button>.toolbarbutton-icon {
+	width: 0 !important;
+}
+
+#private-browsing-indicator-with-label {
+	margin-right: 10px;
+}
+
+#private-browsing-indicator-with-label>label,
+.titlebar-spacer[type="post-tabs"] {
+	display: none !important;
+}

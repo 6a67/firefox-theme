@@ -1,0 +1,37 @@
+:root {
+	/* --tab-color:  var(--theme-primary-color); */
+	--tab-hover-color: color-mix(in srgb, var(--toolbar-bgcolor) 75%, transparent);
+	--tab-active-color: var(--toolbar-bgcolor);
+	/* --tab-color: var(--theme-primary-color); */
+	--tab-color: color-mix(in srgb, var(--toolbar-field-background-color) 90%, black 10%);
+}
+
+
+/* Sets tab appearance */
+.tab-background {	
+	background-color: var(--tab-color);
+	background-image: none !important;
+	border-radius: 6px !important;
+	outline: none !important;
+	box-shadow: none!important;
+}
+
+.tabbrowser-tab:hover:not([selected]):not([multiselected]) .tab-background {
+	background-color: var(--tab-hover-color) !important;
+}
+
+.tab-background[selected],
+.tab-background[multiselected] {
+	background-color: var(--tab-active-color) !important;
+}
+#tabbrowser-tabs {
+  --tab-loading-fill: AccentColor !important;
+}
+
+.titlebar-spacer[type="pre-tabs"]{
+	width: 15px!important;
+}
+
+.tabbrowser-tab {
+	padding-inline: 4px !important;
+}
